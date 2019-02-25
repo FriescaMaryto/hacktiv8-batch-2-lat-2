@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title> Calculator </title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h1 class="center">Calculator</h1>
+    <!-- kotak -->
+    <div class="container">
+        <div class="row" style="padding:12px;">
+            <div class="screen">
+                <input type="text" id="data" class="input-text" readonly/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=1" class="button">1</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=2" class="button">2</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=3" class="button">3</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+='+'" class="button">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=4" class="button">4</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=5" class="button">5</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=6" class="button">6</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+='-'" class="button">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=7" class="button">7</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=8" class="button">8</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=9" class="button">9</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+='*'" class="button">x</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value=''" class="button">C</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+=0" class="button">0</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value=eval(document.getElementById('data').value)" class="button">=</button>
+            </div>
+            <div class="inner-row">
+                <button onclick="document.getElementById('data').value+='/'" class="button">:</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"> </script>
+
+
+</body>
+</html>
